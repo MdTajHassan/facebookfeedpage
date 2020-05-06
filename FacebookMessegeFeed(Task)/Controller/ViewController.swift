@@ -20,6 +20,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        print("gdfh")
         
         getDataFromServer()
  
