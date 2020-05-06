@@ -3,19 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00E36D35C1659F3344E7B4D8 /* Pods_FacebookMessegeFeed_Task_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF6A18788DCD355B43002684 /* Pods_FacebookMessegeFeed_Task_.framework */; };
 		C2912802246293C20040AAC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2912801246293C20040AAC5 /* AppDelegate.swift */; };
 		C2912804246293C20040AAC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2912803246293C20040AAC5 /* SceneDelegate.swift */; };
 		C2912806246293C20040AAC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2912805246293C20040AAC5 /* ViewController.swift */; };
 		C2912809246293C20040AAC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2912807246293C20040AAC5 /* Main.storyboard */; };
 		C291280B246293C80040AAC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C291280A246293C80040AAC5 /* Assets.xcassets */; };
 		C291280E246293C80040AAC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C291280C246293C80040AAC5 /* LaunchScreen.storyboard */; };
+		C291281624629A410040AAC5 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C291281524629A410040AAC5 /* TableViewCell.swift */; };
+		C2912826246301B90040AAC5 /* FBModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2912825246301B90040AAC5 /* FBModel.swift */; };
+		C2912831246333CE0040AAC5 /* Extention+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2912830246333CE0040AAC5 /* Extention+ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		971F72B16CEA5320BFFC65AC /* Pods-FacebookMessegeFeed(Task).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacebookMessegeFeed(Task).debug.xcconfig"; path = "Target Support Files/Pods-FacebookMessegeFeed(Task)/Pods-FacebookMessegeFeed(Task).debug.xcconfig"; sourceTree = "<group>"; };
 		C29127FE246293C20040AAC5 /* FacebookMessegeFeed(Task).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FacebookMessegeFeed(Task).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2912801246293C20040AAC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2912803246293C20040AAC5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,11 @@
 		C291280A246293C80040AAC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C291280D246293C80040AAC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C291280F246293C80040AAC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C291281524629A410040AAC5 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		C2912825246301B90040AAC5 /* FBModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBModel.swift; sourceTree = "<group>"; };
+		C2912830246333CE0040AAC5 /* Extention+ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extention+ViewController.swift"; sourceTree = "<group>"; };
+		CC6ED2548C0C493D781B4AED /* Pods-FacebookMessegeFeed(Task).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacebookMessegeFeed(Task).release.xcconfig"; path = "Target Support Files/Pods-FacebookMessegeFeed(Task)/Pods-FacebookMessegeFeed(Task).release.xcconfig"; sourceTree = "<group>"; };
+		CF6A18788DCD355B43002684 /* Pods_FacebookMessegeFeed_Task_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FacebookMessegeFeed_Task_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00E36D35C1659F3344E7B4D8 /* Pods_FacebookMessegeFeed_Task_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		489C885B30B2E6AF11E48AC0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF6A18788DCD355B43002684 /* Pods_FacebookMessegeFeed_Task_.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C29127F5246293C20040AAC5 = {
 			isa = PBXGroup;
 			children = (
 				C2912800246293C20040AAC5 /* FacebookMessegeFeed(Task) */,
 				C29127FF246293C20040AAC5 /* Products */,
+				DAA4A7C16B745EBA4E6932A7 /* Pods */,
+				489C885B30B2E6AF11E48AC0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +77,51 @@
 		C2912800246293C20040AAC5 /* FacebookMessegeFeed(Task) */ = {
 			isa = PBXGroup;
 			children = (
+				C291282D24632FC50040AAC5 /* Model */,
+				C291282C24632FBB0040AAC5 /* View */,
+				C291282B24632FA00040AAC5 /* Controller */,
 				C2912801246293C20040AAC5 /* AppDelegate.swift */,
 				C2912803246293C20040AAC5 /* SceneDelegate.swift */,
-				C2912805246293C20040AAC5 /* ViewController.swift */,
-				C2912807246293C20040AAC5 /* Main.storyboard */,
 				C291280A246293C80040AAC5 /* Assets.xcassets */,
-				C291280C246293C80040AAC5 /* LaunchScreen.storyboard */,
 				C291280F246293C80040AAC5 /* Info.plist */,
 			);
 			path = "FacebookMessegeFeed(Task)";
+			sourceTree = "<group>";
+		};
+		C291282B24632FA00040AAC5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C2912805246293C20040AAC5 /* ViewController.swift */,
+				C291281524629A410040AAC5 /* TableViewCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C291282C24632FBB0040AAC5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C2912807246293C20040AAC5 /* Main.storyboard */,
+				C291280C246293C80040AAC5 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C291282D24632FC50040AAC5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C2912830246333CE0040AAC5 /* Extention+ViewController.swift */,
+				C2912825246301B90040AAC5 /* FBModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DAA4A7C16B745EBA4E6932A7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				971F72B16CEA5320BFFC65AC /* Pods-FacebookMessegeFeed(Task).debug.xcconfig */,
+				CC6ED2548C0C493D781B4AED /* Pods-FacebookMessegeFeed(Task).release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +131,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C2912812246293C80040AAC5 /* Build configuration list for PBXNativeTarget "FacebookMessegeFeed(Task)" */;
 			buildPhases = (
+				FCC927C9FC4B4886FB46A7F6 /* [CP] Check Pods Manifest.lock */,
 				C29127FA246293C20040AAC5 /* Sources */,
 				C29127FB246293C20040AAC5 /* Frameworks */,
 				C29127FC246293C20040AAC5 /* Resources */,
+				7E99F8FA03399D5FB411A4B5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,12 +192,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7E99F8FA03399D5FB411A4B5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FacebookMessegeFeed(Task)/Pods-FacebookMessegeFeed(Task)-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FacebookMessegeFeed(Task)/Pods-FacebookMessegeFeed(Task)-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FacebookMessegeFeed(Task)/Pods-FacebookMessegeFeed(Task)-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCC927C9FC4B4886FB46A7F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FacebookMessegeFeed(Task)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C29127FA246293C20040AAC5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2912831246333CE0040AAC5 /* Extention+ViewController.swift in Sources */,
 				C2912806246293C20040AAC5 /* ViewController.swift in Sources */,
+				C291281624629A410040AAC5 /* TableViewCell.swift in Sources */,
+				C2912826246301B90040AAC5 /* FBModel.swift in Sources */,
 				C2912802246293C20040AAC5 /* AppDelegate.swift in Sources */,
 				C2912804246293C20040AAC5 /* SceneDelegate.swift in Sources */,
 			);
@@ -282,6 +386,7 @@
 		};
 		C2912813246293C80040AAC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 971F72B16CEA5320BFFC65AC /* Pods-FacebookMessegeFeed(Task).debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +405,7 @@
 		};
 		C2912814246293C80040AAC5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC6ED2548C0C493D781B4AED /* Pods-FacebookMessegeFeed(Task).release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
